@@ -11,6 +11,6 @@ class CreateTimeEntries < ActiveRecord::Migration[8.0]
       t.timestamps
     end
 
-    add_index :time_entries, [:user_id, :date, :hour]
+    add_index :time_entries, [ :user_id, :date, :hour ]
   end
 end
